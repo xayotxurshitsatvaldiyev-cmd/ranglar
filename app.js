@@ -18,7 +18,7 @@ const setRanglar = () => {
     const color1 = randomRanglar()
     const color2 = randomRanglar()
     const daraja = Math.floor(Math.random() * 360)
-    p.textContent = `${daraja}deg:    ${color1}, ${color2}`
+    p.textContent = `${daraja}deg,    ${color1}, ${color2}`
     const bg = `linear-gradient(
         ${daraja}deg,
         ${color1},
@@ -26,5 +26,6 @@ const setRanglar = () => {
     )`
     body.style.background = bg
 }
+
 
 quti.addEventListener('click', setRanglar)
